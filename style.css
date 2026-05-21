@@ -1,0 +1,157 @@
+body{
+
+margin:0;
+padding:30px;
+
+font-family:Arial;
+
+background:
+linear-gradient(
+135deg,
+#0f0c29,
+#302b63,
+#24243e
+);
+
+color:white;
+text-align:center;
+}
+
+
+/* TITLE */
+
+h1{
+
+font-size:50px;
+
+text-shadow:
+0 0 20px cyan;
+
+margin-bottom:20px;
+}
+
+
+/* PROJECT SECTION */
+
+.projects{
+
+margin-top:50px;
+
+display:flex;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:25px;
+}
+
+
+/* PROJECT CARDS */
+
+.card{
+
+background:
+rgba(255,255,255,.08);
+
+padding:25px;
+
+border-radius:20px;
+
+width:300px;
+
+backdrop-filter:
+blur(10px);
+
+transition:.3s;
+
+box-shadow:
+0 0 10px rgba(0,0,0,.4);
+}
+
+
+.card:hover{
+
+transform:
+translateY(-10px);
+
+box-shadow:
+0 0 20px cyan;
+}
+
+
+/* PROJECT BUTTON */
+
+.card a{
+
+display:inline-block;
+
+margin-top:15px;
+
+padding:12px 20px;
+
+background:cyan;
+
+color:black;
+
+text-decoration:none;
+
+border-radius:10px;
+
+font-weight:bold;
+
+transition:.3s;
+}
+
+
+.card a:hover{
+
+background:white;
+
+transform:
+scale(1.05);
+}
+
+
+/* TEXT */
+
+.card h3{
+
+font-size:28px;
+
+margin-bottom:10px;
+}
+
+.card p{
+
+font-size:18px;
+
+color:#ddd;
+}
+
+
+
+/* ================= */
+/* MOBILE RESPONSIVE */
+/* ================= */
+
+@media(max-width:768px){
+
+h1{
+font-size:35px;
+}
+
+.projects{
+
+flex-direction:column;
+
+align-items:center;
+}
+
+
+.card{
+
+width:90%;
+}
+
+}
