@@ -1,0 +1,198 @@
+body{
+margin:0;
+padding:20px;
+font-family:Arial;
+
+background:
+linear-gradient(
+135deg,
+#0f0c29,
+#302b63,
+#24243e
+);
+
+color:white;
+text-align:center;
+}
+
+
+/* TITLE */
+
+h1{
+font-size:50px;
+text-shadow:0 0 20px cyan;
+margin-bottom:20px;
+}
+
+header p{
+font-size:20px;
+color:#ddd;
+}
+
+
+/* PROJECTS */
+
+.projects{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+margin-top:40px;
+}
+
+
+/* CARDS */
+
+.card{
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(10px);
+
+border-radius:20px;
+
+padding:20px;
+
+width:280px;
+
+box-shadow:
+0 0 10px rgba(0,0,0,.4);
+
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px cyan;
+}
+
+.card h3{
+font-size:25px;
+margin-bottom:10px;
+}
+
+.card p{
+font-size:16px;
+color:#ddd;
+line-height:1.5;
+}
+
+.card a{
+display:inline-block;
+
+margin-top:15px;
+
+padding:12px 18px;
+
+background:cyan;
+
+color:black;
+
+text-decoration:none;
+
+border-radius:10px;
+
+font-weight:bold;
+}
+
+
+
+/* ==================
+MOBILE
+================== */
+
+/* ======================
+MOBILE PREMIUM VERSION
+====================== */
+
+@media (max-width:768px){
+
+body{
+padding:15px;
+}
+
+/* Title */
+h1{
+font-size:42px;
+line-height:1.2;
+margin-bottom:10px;
+}
+
+header p{
+font-size:18px;
+padding:0 10px;
+}
+
+
+/* Cards layout */
+.projects{
+
+display:grid;
+
+grid-template-columns:
+repeat(2,minmax(140px,1fr));
+
+gap:18px;
+
+align-items:stretch;
+}
+
+
+/* Card */
+
+.card{
+
+width:auto;
+
+padding:18px;
+
+border-radius:18px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:space-between;
+
+min-height:220px;
+}
+
+
+/* Text */
+
+.card h3{
+font-size:21px;
+margin-bottom:8px;
+}
+
+.card p{
+font-size:15px;
+line-height:1.5;
+}
+
+
+/* Button */
+
+.card a{
+
+margin-top:auto;
+
+padding:12px;
+
+font-size:15px;
+
+border-radius:12px;
+
+width:100%;
+
+box-sizing:border-box;
+}
+
+
+/* Hover less aggressive on phone */
+
+.card:hover{
+transform:none;
+box-shadow:0 0 12px cyan;
+}
+
+}
